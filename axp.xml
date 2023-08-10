@@ -5,24 +5,24 @@
 
         <remote name="sfX" 
               fetch="https://github.com/sfX-Android/" 
-              revision="axp-a13" />  
+              revision="axp-a10" />  
         <remote name="axp.os" 
               fetch="https://github.com/AXP-OS/"
-              revision="axp-a13" />
+              revision="axp-a10" />
        <remote name="los" 
               fetch="https://github.com/LineageOS" 
-              revision="lineage-20" />
+              revision="lineage-17.1" />
        <remote name="gos" 
               fetch="https://github.com/GrapheneOS" 
-              revision="13" />
+              revision="10" />
        <remote name="muppets" 
-              fetch="https://github.com/GrapheneOS" 
-              revision="lineage-20" />
+              fetch="https://github.com/TheMuppets" 
+              revision="lineage-17.1" />
   
         <!-- FIRMWARE related repo, not shared public and even not on github bc they want money for LFS  -->
         <remote name="axp.os-private" 
               fetch="ssh://code.binbash.rocks:22227/AXP.OS"
-              revision="axp-a13" />
+              revision="axp-a10" />
 
         <!-- Wireguard module -->
         <remote name="zx2c4" 
@@ -35,47 +35,71 @@
 <!-- END OF REMOTE DEFINITIONS -->
 
 <!-- START OF UNNECESSARY REPO REMOVAL -->
-      	<remove-project name="LineageOS/android_external_ant-wireless_ant_native" />
-      	<remove-project name="LineageOS/android_external_ant-wireless_ant_service" />
-      	<remove-project name="LineageOS/android_external_bash" />
-      	<remove-project name="LineageOS/android_external_htop" />
-      	<remove-project name="LineageOS/android_external_libncurses" />
-      	<remove-project name="LineageOS/android_external_nano" />
-      	<remove-project name="LineageOS/android_external_openssh" />
-      	<remove-project name="LineageOS/android_external_rsync" />
-      	<remove-project name="LineageOS/android_external_unrar" />
-      	<remove-project name="LineageOS/android_external_vim" />
-      	<remove-project name="LineageOS/android_packages_apps_Eleven" />
-      	<remove-project name="LineageOS/android_packages_apps_Jelly" />
-      	<!--<remove-project name="LineageOS/android_packages_apps_Stk" />-->
-      	<remove-project name="LineageOS/charter" />
-      	<remove-project name="LineageOS/cm_crowdin" />
-      	<remove-project name="LineageOS/contributors-cloud-generator" />
-      	<remove-project name="LineageOS/hudson" />
-      	<remove-project name="LineageOS/lineage_wiki" />
-      	<remove-project name="LineageOS/mirror" />
-      	<remove-project name="LineageOS/www" />
-      	<remove-project name="platform/packages/apps/Browser2" />
-      	<remove-project name="platform/packages/apps/Music" />
-      	<remove-project name="platform/packages/apps/MusicFX" />
-      	<remove-project name="platform/packages/apps/QuickSearchBox" />
-      	<remove-project name="platform/packages/apps/SampleLocationAttribution" />
-      	<!--<remove-project name="platform/packages/modules/AdServices" />-->
-      	<remove-project name="platform/prebuilts/clang/host/darwin-x86" />
-      	<remove-project name="platform/prebuilts/go/darwin-x86" />
+	<remove-project name="device/generic/goldfish-opengl" />
+	<remove-project name="device/generic/mini-emulator-arm64" />
+	<remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+	<remove-project name="device/generic/mini-emulator-x86" />
+	<remove-project name="device/generic/mini-emulator-x86_64" />
+	<remove-project name="device/generic/qemu" />
+	<remove-project name="LineageOS/android_device_generic_goldfish" />
+	<remove-project name="LineageOS/android_external_ant-wireless_ant_native" />
+	<remove-project name="LineageOS/android_external_ant-wireless_ant_service" />
+	<remove-project name="LineageOS/android_external_bash" />
+	<remove-project name="LineageOS/android_external_htop" />
+	<remove-project name="LineageOS/android_external_libncurses" />
+	<remove-project name="LineageOS/android_external_nano" />
+	<remove-project name="LineageOS/android_external_openssh" />
+	<remove-project name="LineageOS/android_external_p7zip" />
+	<remove-project name="LineageOS/android_external_rsync" />
+	<remove-project name="LineageOS/android_external_unrar" />
+	<remove-project name="LineageOS/android_external_vim" />
+	<remove-project name="LineageOS/android_packages_apps_Eleven" />
+	<remove-project name="LineageOS/android_packages_apps_Jelly" />
+	<!--<remove-project name="LineageOS/android_packages_apps_Stk" />-->
+	<remove-project name="LineageOS/android_packages_apps_Terminal" />
+	<remove-project name="LineageOS/android_packages_providers_PartnerBookmarksProvider" />
+	<remove-project name="LineageOS/android_packages_screensavers_Basic" />
+	<remove-project name="LineageOS/android_packages_screensavers_PhotoTable" />
+	<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
+	<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
+	<remove-project name="LineageOS/ansible" />
+	<remove-project name="LineageOS/charter" />
+	<remove-project name="LineageOS/cm_crowdin" />
+	<remove-project name="LineageOS/contributors-cloud-generator" />
+	<remove-project name="LineageOS/cve_tracker" />
+	<remove-project name="LineageOS/hudson" />
+	<remove-project name="LineageOS/lineage_wiki" />
+	<remove-project name="LineageOS/mirror" />
+	<remove-project name="LineageOS/scripts" />
+	<remove-project name="LineageOS/slackbot" />
+	<remove-project name="LineageOS/www" />
+	<remove-project name="platform/external/iperf3" />
+	<remove-project name="platform/external/tcpdump" />
+	<remove-project name="platform/external/virglrenderer" />
+	<remove-project name="platform/external/wayland" />
+	<remove-project name="platform/external/wayland-protocols" />
+	<remove-project name="platform/packages/apps/SampleLocationAttribution" />
+	<remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+	<remove-project name="platform/prebuilts/fuchsia_sdk" />
+	<remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+	<remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+	<remove-project name="platform/prebuilts/gdb/darwin-x86" />
+	<remove-project name="platform/prebuilts/go/darwin-x86" />
+	<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+	<remove-project name="platform/prebuilts/qemu-kernel" />
 <!-- END OF UNNECESSARY REPO REMOVAL -->
 
 <!-- START OF BRANCH SWITCHING -->
-        <!-- Switch to the Mulch WebView -->
-        <remove-project name="LineageOS/android_external_chromium-webview_patches" />
-        <remove-project name="LineageOS/android_external_chromium-webview_prebuilt_arm" />
-        <remove-project name="LineageOS/android_external_chromium-webview_prebuilt_arm64" />
-        <remove-project name="LineageOS/android_external_chromium-webview_prebuilt_x86" />
-        <remove-project name="LineageOS/android_external_chromium-webview_prebuilt_x86_64" />
-        <project path="external/chromium-webview" name="divested-mobile/mulch" groups="pdk" clone-depth="1" remote="gitlab" revision="master" />
+	<!--<remove-project name="platform/external/swiftshader" />
+	<project path="external/swiftshader" name="google/swiftshader" remote="github" revision="master" />-->
+
+	<!-- Switch to the Mulch WebView -->
+	<remove-project name="LineageOS/android_external_chromium-webview" />
+	<project path="external/chromium-webview" name="divested-mobile/mulch" groups="pdk" clone-depth="1" remote="gitlab" revision="master" />
 <!-- END OF BRANCH SWITCHING -->
-  
+
 <!-- START OF ADDITIONAL REPOS -->
+	<project path="external/svox" name="platform/external/svox" groups="pdk" remote="aosp" revision="master" />
         <!-- GrapheneOS -->
         <project path="external/hardened_malloc" name="hardened_malloc" remote="gos" />
         <!--project path="external/SecureCamera" name="platform_external_Camera" remote="gos" />-->
@@ -97,13 +121,14 @@
 <!-- START OF DEVICE REPOS -->
         <!-- 
           Currently unsupported devices can be added from here:
-          https://github.com/Divested-Mobile/DivestOS-Build/blob/master/Manifests/Manifest_LAOS-20.0.xml 
+          https://github.com/Divested-Mobile/DivestOS-Build/blob/master/Manifests/Manifest_LAOS-17.1.xml 
         -->
         <!-- Common -->
-        <project path="system/qcom" name="android_system_qcom" remote="los" />
-        <project path="external/bson" name="android_external_bson" remote="los" />
-        <project path="hardware/sony/SonyOpenTelephony" name="android_hardware_sony_SonyOpenTelephony" remote="los" />
-        <project path="packages/apps/ElmyraService" name="android_packages_apps_ElmyraService" remote="los" revision="lineage-20.0" />
+	<project path="system/qcom" name="android_system_qcom" remote="los" />
+	<project path="external/bson" name="android_external_bson" remote="los" />
+	<project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="los" />
+	<project path="hardware/sony/thermanager" name="android_hardware_sony_thermanager" remote="los" />
+	<project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="los" />
 
         <!-- OnePlus 7T Pro (hotdog) -->
         <project path="device/oneplus/hotdog" name="android_device_oneplus_hotdog" remote="los" />
