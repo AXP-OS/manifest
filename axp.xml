@@ -90,9 +90,6 @@
 <!-- END OF UNNECESSARY REPO REMOVAL -->
 
 <!-- START OF BRANCH SWITCHING -->
-	<!--<remove-project name="platform/external/swiftshader" />
-	<project path="external/swiftshader" name="google/swiftshader" remote="github" revision="master" />-->
-
 	<!-- Switch to the Mulch WebView -->
 	<remove-project name="LineageOS/android_external_chromium-webview" />
 	<project path="external/chromium-webview" name="divested-mobile/mulch" groups="pdk" clone-depth="1" remote="gitlab" revision="master" />
@@ -119,27 +116,28 @@
 <!-- END OF AXP.OS REPOS -->
 
 <!-- START OF DEVICE REPOS -->
-        <!-- 
+        <!--
           Currently unsupported devices can be added from here:
           https://github.com/Divested-Mobile/DivestOS-Build/blob/master/Manifests/Manifest_LAOS-17.1.xml 
         -->
+	
         <!-- Common -->
 	<project path="system/qcom" name="android_system_qcom" remote="los" />
 	<project path="external/bson" name="android_external_bson" remote="los" />
 	<project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="los" />
 	<project path="hardware/sony/thermanager" name="android_hardware_sony_thermanager" remote="los" />
 	<project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="los" />
+	<project name="android_hardware_samsung" path="hardware/samsung" remote="axp.os" />
 
-        <!-- OnePlus 7T Pro (hotdog) -->
-        <project path="device/oneplus/hotdog" name="android_device_oneplus_hotdog" remote="los" />
-        <project path="device/oneplus/sm8150-common" name="android_device_oneplus_sm8150-common" remote="sfX" />
-        <project path="kernel/oneplus/sm8150" name="android_kernel_oneplus_sm8150" remote="los" />
-        <project path="vendor/oneplus/hotdog" name="proprietary_vendor_oneplus_hotdog" remote="muppets" />
-        <project path="vendor/oneplus/sm8150-common" name="proprietary_vendor_oneplus_sm8150-common" remote="muppets" />
-  
         <!-- Common Proprietary Blobs -->
-        <project path="hardware/oplus" name="android_hardware_oplus" remote="los" />
-        <project path="vendor/oneplus/msm8998-common" name="proprietary_vendor_oneplus_msm8998-common" remote="muppets" />
+	<project name="android_vendor_samsung_universal7870-common" path="vendor/samsung/universal7870-common" remote="axp.os" />
+	
+        <!-- Samsung J5 (j5y17lte) -->
+        <project name="android_device_samsung_j5y17lte" path="device/samsung/j5y17lte" remote="axp.os" />
+        <project name="android_device_samsung_exynos7870-common" path="device/samsung/universal7870-common"  remote="axp.os" />
+        <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="axp.os" />
+	<project name="android_vendor_samsung_j5y17lte" path="vendor/samsung/j5y17lte" remote="axp.os" />
+
 <!-- END OF DEVICE REPOS -->
       
 </manifest>
