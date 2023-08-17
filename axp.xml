@@ -98,7 +98,7 @@
 <!-- START OF ADDITIONAL REPOS -->
 	<project path="external/svox" name="platform/external/svox" groups="pdk" remote="aosp" revision="master" />
         <!-- GrapheneOS -->
-        <project path="external/hardened_malloc" name="hardened_malloc" remote="gos" />
+        <project path="external/hardened_malloc" name="hardened_malloc" remote="gos" revision="526ccd915180ae9d0464f4e92c1c485c2ec91dec" />
         <!--project path="external/SecureCamera" name="platform_external_Camera" remote="gos" />-->
 <!-- END OF ADDITIONAL REPOS -->
 
@@ -124,7 +124,7 @@
         <!-- Common -->
 	<project path="system/qcom" name="android_system_qcom" remote="los" />
 	<project path="external/bson" name="android_external_bson" remote="los" />
-	<project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="los" />
+	<project path="external/sony/boringssl-compat" name="android_external_sony_boringssl-compat" remote="los" />
 	<project path="hardware/sony/thermanager" name="android_hardware_sony_thermanager" remote="los" />
 	<project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="los" />
 	<project name="android_hardware_samsung" path="hardware/samsung" remote="axp.os" />
