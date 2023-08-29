@@ -38,6 +38,12 @@
 <!-- END OF REMOTE DEFINITIONS -->
 
 <!-- START OF UNNECESSARY REPO REMOVAL -->
+	<!-- part of device tree -->
+	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" />
+	<remove-project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+	<remove-project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" />
+
+	
 	<remove-project name="LineageOS/android_external_ant-wireless_ant_native" />
 	<remove-project name="LineageOS/android_external_ant-wireless_ant_service" />
 	<remove-project name="LineageOS/android_external_bash" />
@@ -115,8 +121,35 @@
         <project name="android_device_lge_g4" path="device/lge/g4" remote="gfour" />
         <project name="kernel_lge_msm8992" path="kernel/lge/msm8992" remote="gfour" />
         <project path="vendor/lge" name="proprietary_vendor_lge" remote="gfour" revision="android-12" />
-
+	
+	<!-- special handling for hardware/qcom-caf as msm8994 has been removed from LOS -->
         <project name="device_qcom_sepolicy-legacy" path="device/qcom/sepolicy-legacy" remote="gfour" revision="android-12" />
+	<project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="lineage" >
+	        <!-- add guard for AOSP hardware/qcom dir -->
+	        <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+	        <!-- add guards for CAF repositories -->
+	        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8994/Android.mk" remote="lineage" revision="lineage-18.1" />
+	        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" remote="lineage" />
+	        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" remote="lineage" />
+	        <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" remote="lineage" />
+	        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" remote="lineage" />
+	        <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" remote="lineage" />
+	        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" remote="lineage" />
+	        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" remote="lineage" />
+	        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" remote="lineage" />
+	        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" remote="lineage" />
+	        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" remote="lineage" />
+	        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" remote="lineage" />
+	        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" remote="lineage" />
+	        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" remote="lineage" />
+	        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" remote="lineage" />
+	        <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" remote="lineage" />
+	        <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" remote="lineage" />
+	        <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" remote="lineage" />
+	        <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" remote="lineage" />
+	        <!-- add namespace for BT adv audio, as required for QTI BT stack -->
+	        <linkfile src="os_pickup_qssi_bt.bp" dest="device/qcom/qssi/Android.bp" remote="lineage" />
+	</project>
         <project path="hardware/qcom-caf/msm8994/audio" name="android_hardware_qcom_audio" revision="lineage-18.1-caf-msm8994" remote="los" />
         <project path="hardware/qcom-caf/msm8994/display" name="android_hardware_qcom_display" revision="lineage-18.1-caf-msm8994" remote="los" />
         <project path="hardware/qcom-caf/msm8994/media" name="android_hardware_qcom_media" revision="lineage-18.1-caf-msm8994" remote="los" />
