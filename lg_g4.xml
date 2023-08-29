@@ -18,6 +18,9 @@
        <remote name="muppets" 
               fetch="https://github.com/TheMuppets" 
               revision="lineage-19.1" />
+       <remote name="gfour"
+           fetch="https://github.com/LGgFour/"
+           revision="lineage-19.1" />
   
         <!-- FIRMWARE related repo, not shared public and even not on github bc they want money for LFS  -->
         <remote name="axp.os-private" 
@@ -106,6 +109,17 @@
         <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="los" />
         <project path="packages/apps/ElmyraService" name="android_packages_apps_ElmyraService" remote="los" />
         <project name="system_tools_dtbtool" path="system/tools/dtbtool" remote="PE" revision="twelve" />
+        
+        <!-- LG G4 (h810, h811, h812, h815:int, h815_usu, vs986 -->
+        <project name="android_device_lge_g4-common" path="device/lge/g4-common" remote="gfour" />
+        <project name="android_device_lge_g4" path="device/lge/g4" remote="gfour" />
+        <project name="kernel_lge_msm8992" path="kernel/lge/msm8992" remote="gfour" />
+        <project path="vendor/lge" name="proprietary_vendor_lge" remote="gfour" revision="android-12" />
+
+        <project name="device_qcom_sepolicy-legacy" path="device/qcom/sepolicy-legacy" remote="gfour" revision="android-12" />
+        <project path="hardware/qcom-caf/msm8994/audio" name="android_hardware_qcom_audio" revision="lineage-18.1-caf-msm8994" remote="los" />
+        <project path="hardware/qcom-caf/msm8994/display" name="android_hardware_qcom_display" revision="lineage-18.1-caf-msm8994" remote="los" />
+        <project path="hardware/qcom-caf/msm8994/media" name="android_hardware_qcom_media" revision="lineage-18.1-caf-msm8994" remote="los" />
         
         <!-- Common Proprietary Blobs -->
 
