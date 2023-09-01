@@ -18,6 +18,8 @@
        <remote name="muppets" 
               fetch="https://github.com/TheMuppets" 
               revision="lineage-19.1" />
+	<remote name="PE"
+            fetch="https://github.com/PixelExperience/" />
   
         <!-- FIRMWARE related repo, not shared public and even not on github bc they want money for LFS  -->
         <remote name="axp.os-private" 
