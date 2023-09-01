@@ -19,7 +19,8 @@
               fetch="https://github.com/TheMuppets" 
               revision="lineage-19.1" />
 	<remote name="PE"
-            fetch="https://github.com/PixelExperience/" />
+            fetch="https://github.com/PixelExperience/" 
+	    revision="twelve" />
   
         <!-- FIRMWARE related repo, not shared public and even not on github bc they want money for LFS  -->
         <remote name="axp.os-private" 
@@ -107,7 +108,7 @@
         <project path="hardware/sony/SonyOpenTelephony" name="android_hardware_sony_SonyOpenTelephony" remote="los" />
         <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="los" />
         <project path="packages/apps/ElmyraService" name="android_packages_apps_ElmyraService" remote="los" />
-        <project name="system_tools_dtbtool" path="system/tools/dtbtool" remote="PE" revision="twelve" />
+        <project name="system_tools_dtbtool" path="system/tools/dtbtool" remote="PE" />
         
         <!-- Common Proprietary Blobs -->
 
