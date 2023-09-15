@@ -52,7 +52,6 @@
 	<remove-project name="LineageOS/android_external_p7zip" />
 	<remove-project name="LineageOS/android_external_rsync" />
 	<remove-project name="LineageOS/android_external_unrar" />
-	<remove-project name="LineageOS/android_external_vim" />
 	<remove-project name="LineageOS/android_packages_apps_Eleven" />
 	<remove-project name="LineageOS/android_packages_apps_Jelly" />
 	<!--<remove-project name="LineageOS/android_packages_apps_Stk" />-->
