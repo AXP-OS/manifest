@@ -5,16 +5,20 @@
 
         <remote name="sfX" 
               fetch="https://github.com/sfX-Android/" 
-              revision="axp-a10" />  
+              revision="axp-a10" />
+	
         <remote name="axp.os" 
               fetch="https://github.com/AXP-OS/"
               revision="axp-a10" />
+	
        <remote name="los" 
               fetch="https://github.com/LineageOS" 
               revision="lineage-17.1" />
+	
        <remote name="gos" 
               fetch="https://github.com/GrapheneOS" 
               revision="10" />
+	
        <remote name="muppets" 
               fetch="https://github.com/TheMuppets" 
               revision="lineage-17.1" />
@@ -92,6 +96,10 @@
 	<!-- Switch to the Mulch WebView -->
 	<remove-project name="LineageOS/android_external_chromium-webview" />
 	<project path="external/chromium-webview" name="divested-mobile/mulch" groups="pdk" clone-depth="1" remote="gitlab" revision="master" />
+
+	<!-- use newer branches -->
+	<remove-project name="platform/external/webp" />
+	<project path="external/webp" name="android_external_webp" remote="los" revision="lineage-18.1" />
 <!-- END OF BRANCH SWITCHING -->
 
 <!-- START OF ADDITIONAL REPOS -->
