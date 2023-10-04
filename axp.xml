@@ -134,10 +134,10 @@
 	<project path="external/sony/boringssl-compat" name="android_external_sony_boringssl-compat" remote="los" />
 	<project path="hardware/sony/thermanager" name="android_hardware_sony_thermanager" remote="los" />
 	<project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="los" />
-	<project name="android_hardware_samsung" path="hardware/samsung" remote="axp.os" />
+	<project name="hardware_samsung" path="hardware/samsung" remote="axp.os" />
 
         <!-- Common Proprietary Blobs -->
-	<project name="android_vendor_samsung_universal7870-common" path="vendor/samsung/universal7870-common" remote="axp.os" />
+	<project name="vendor_samsung_universal7870-common" path="vendor/samsung/universal7870-common" remote="axp.os" />
 	
         <!-- Samsung J5 (j5y17lte) -->
         <project name="device_samsung_j5y17lte" path="device/samsung/j5y17lte" remote="axp.os" />
