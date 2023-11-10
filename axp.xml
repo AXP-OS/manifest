@@ -115,7 +115,7 @@
         <!-- vendor/firmware repo - !not shared public! -->
         <project path="vendor/firmware" name="vendor_firmware" remote="axp.os-private" />
         <!-- extendrom -->
-        <project path="vendor/extendrom" name="android_vendor_extendrom" remote="sfX" revision="magisk_next" />
+        <project path="vendor/extendrom" name="android_vendor_extendrom" remote="sfX" revision="main" />
         <!-- build tools -->
         <project path="external/buildtools" name="android_buildtools" remote="sfX" revision="main" />
         <!-- WireGuard VPN -->
