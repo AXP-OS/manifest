@@ -141,7 +141,7 @@
         <!-- Samsung J5 (j5y17lte) -->
         <project name="device_samsung_j5y17lte" path="device/samsung/j5y17lte" remote="axp.os" />
         <project name="device_samsung_exynos7870-common" path="device/samsung/universal7870-common"  remote="axp.os" />
-        <project name="kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="axp.os" revision="axp-a10_permissive" />
+        <project name="kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="axp.os" />
 	<project name="vendor_samsung_j5y17lte" path="vendor/samsung/j5y17lte" remote="axp.os" />
 
 <!-- END OF DEVICE REPOS -->
