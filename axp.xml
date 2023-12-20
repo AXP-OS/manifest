@@ -21,6 +21,9 @@
        <remote name="gfour"
            fetch="https://github.com/LGgFour/"
            revision="lineage-19.1" />
+        <remote name="pixelE"
+           fetch="https://github.com/PixelExperience"
+           revision="twelve" />
   
         <!-- FIRMWARE related repo, not shared public and even not on github bc they want money for LFS  -->
         <remote name="axp.os-private" 
@@ -39,8 +42,8 @@
 
 <!-- START OF UNNECESSARY REPO REMOVAL -->
 	<!-- part of device tree -->
-	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" />
-	<remove-project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
+        <remove-project path="hardware/broadcom/libbt" name="LineageOS/android_hardware_broadcom_libbt" />
 	<remove-project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" />
 	<!--remove-project path="system/qcom" name="LineageOS/android_system_qcom" />-->
 	
@@ -113,7 +116,7 @@
         <project path="hardware/sony/SonyOpenTelephony" name="android_hardware_sony_SonyOpenTelephony" remote="los" />
         <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="los" />
         <project path="packages/apps/ElmyraService" name="android_packages_apps_ElmyraService" remote="los" />
-        <project name="system_tools_dtbtool" path="system/tools/dtbtool" remote="PE" revision="twelve" />
+        <project name="system_tools_dtbtool" path="system/tools/dtbtool" remote="pixelE" revision="twelve" />
         
         <!-- LG G4 (h810, h811, h812, h815:int, h815_usu, vs986 -->
         <project name="android_device_lge_g4-common" path="device/lge/g4-common" remote="gfour" />
@@ -123,10 +126,10 @@
 	
 	<!-- special handling for hardware/qcom-caf as msm8994 has been removed from LOS -->
         <project name="device_qcom_sepolicy-legacy" path="device/qcom/sepolicy-legacy" remote="gfour" revision="android-12" />
-	<project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="lineage" >
-	        <!-- add guard for AOSP hardware/qcom dir -->
+        <!-- add guard for AOSP hardware/qcom dir -->
+        <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" >
 	        <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
-	        <!-- add guards for CAF repositories -->
+                <!-- add guards for CAF repositories -->
 	        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8994/Android.mk" remote="lineage" revision="lineage-18.1" />
 	        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" remote="lineage" />
 	        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" remote="lineage" />
@@ -146,7 +149,7 @@
 	        <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" remote="lineage" />
 	        <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" remote="lineage" />
 	        <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" remote="lineage" />
-	        <!-- add namespace for BT adv audio, as required for QTI BT stack -->
+                <!-- add namespace for BT adv audio, as required for QTI BT stack -->
 	        <linkfile src="os_pickup_qssi_bt.bp" dest="device/qcom/qssi/Android.bp" remote="lineage" />
 	</project>
         <project path="hardware/qcom-caf/msm8994/audio" name="android_hardware_qcom_audio" revision="lineage-18.1-caf-msm8994" remote="los" />
