@@ -20,7 +20,7 @@
               revision="lineage-19.1" />
        <remote name="gfour"
            fetch="https://github.com/LGgFour/"
-           revision="lineage-19.1" />
+           revision="axp-a12" />
         <remote name="pixelE"
            fetch="https://github.com/PixelExperience"
            revision="twelve" />
