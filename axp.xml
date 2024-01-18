@@ -45,7 +45,6 @@
 	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
         <remove-project path="hardware/broadcom/libbt" name="LineageOS/android_hardware_broadcom_libbt" />
 	<remove-project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" />
-	<!--remove-project path="system/qcom" name="LineageOS/android_system_qcom" />-->
 	
 	<remove-project name="LineageOS/android_external_ant-wireless_ant_native" />
 	<remove-project name="LineageOS/android_external_ant-wireless_ant_service" />
@@ -111,7 +110,6 @@
           https://github.com/Divested-Mobile/DivestOS-Build/blob/master/Manifests/Manifest_LAOS-19.1.xml 
         -->
         <!-- Common -->
-        <project path="system/qcom" name="android_system_qcom" remote="los" />
         <project path="external/bson" name="android_external_bson" remote="los" />
         <project path="hardware/sony/SonyOpenTelephony" name="android_hardware_sony_SonyOpenTelephony" remote="los" />
         <project path="hardware/sony/timekeep" name="android_hardware_sony_timekeep" remote="los" />
