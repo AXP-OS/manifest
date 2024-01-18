@@ -122,7 +122,7 @@
         <project name="android_device_lge_g4-common" path="device/lge/g4-common" remote="gfour" />
         <project name="android_device_lge_g4" path="device/lge/g4" remote="gfour" />
         <project name="kernel_lge_msm8992" path="kernel/lge/msm8992" remote="gfour" />
-        <project path="vendor/lge" name="proprietary_vendor_lge" remote="gfour" revision="android-12" />
+        <project path="vendor/lge" name="proprietary_vendor_lge" remote="gfour" />
 	
 	<!-- special handling for hardware/qcom-caf as msm8994 has been removed from LOS -->
         <project name="device_qcom_sepolicy-legacy" path="device/qcom/sepolicy-legacy" remote="gfour" revision="android-12" />
