@@ -14,16 +14,13 @@
               revision="lineage-18.1" />
        <remote name="gos" 
               fetch="https://github.com/GrapheneOS" 
-              revision="12" />
+              revision="11" />
        <remote name="muppets" 
               fetch="https://github.com/TheMuppets" 
               revision="lineage-18.1" />
        <remote name="gfour"
            fetch="https://github.com/LGgFour/"
            revision="axp-a11" />
-        <remote name="pixelE"
-           fetch="https://github.com/PixelExperience"
-           revision="twelve" />
   
         <!-- FIRMWARE related repo, not shared public and even not on github bc they want money for LFS  -->
         <remote name="axp.os-private" 
