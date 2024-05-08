@@ -80,8 +80,8 @@
   
 <!-- START OF ADDITIONAL REPOS -->
         <!-- GrapheneOS -->
-	<project path="external/hardened_malloc" name="hardened_malloc" remote="gos" revision="0d6d63cbe7cb6326bb06e1161b680cb3229f25a0" />
-	<project path="external/SecureCamera" name="platform_external_Camera" remote="gos" revision="9ef6468203f681f15137412298c273456bd16930" />
+	<project path="external/hardened_malloc" name="hardened_malloc" remote="gos" revision="749640c274d54e084505a24fa758bcb5f96a25ef" />
+	<project path="external/SecureCamera" name="platform_external_Camera" remote="gos" revision="6b16f075e691d064379fe9d855f4c5c5a44c7f55" />
 <!-- END OF ADDITIONAL REPOS -->
 
 <!-- START OF AXP.OS REPOS -->
