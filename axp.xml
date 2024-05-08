@@ -104,7 +104,7 @@
 <!-- START OF ADDITIONAL REPOS -->
 	<project path="external/svox" name="platform/external/svox" groups="pdk" remote="aosp" revision="master" />
         <!-- GrapheneOS -->
-        <project path="external/hardened_malloc" name="hardened_malloc" remote="gos" revision="526ccd915180ae9d0464f4e92c1c485c2ec91dec" />
+        <project path="external/hardened_malloc" name="hardened_malloc" remote="gos" revision="749640c274d54e084505a24fa758bcb5f96a25ef" />
         <!--project path="external/SecureCamera" name="platform_external_Camera" remote="gos" />-->
 <!-- END OF ADDITIONAL REPOS -->
 
