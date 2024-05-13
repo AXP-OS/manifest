@@ -2,5 +2,5 @@
 <manifest>
   <!-- j5y17lte requires a permissive kernel in recovery -->
   <remove-project name="kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" />
-  <project name="kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="axp.os" revision="axp-a10_permissive"/>
+  <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="axp.os" revision="axp-a10_permissive"/>
 </manifest>
