@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- auto-created by https://github.com/sfX-android/automation_scripts/blob/ansible/roles/axp/common/tasks/git_push.yml -->
+
+
+	<remove-project name="LineageOS/android_art" />
+	<project path="art" name="android_art" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_bionic" />
+	<project path="bionic" name="android_bionic" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_bootable_recovery" />
+	<project path="bootable/recovery" name="android_bootable_recovery" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_build" />
+	<project path="build/make" name="android_build" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_build_soong" />
+	<project path="build/soong" name="android_build_soong" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_device_qcom_sepolicy" />
+	<project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_external_aac" />
+	<project path="external/aac" name="android_external_aac" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="platform/external/conscrypt" />
+	<project path="external/conscrypt" name="platform_external_conscrypt" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_external_freetype" />
+	<project path="external/freetype" name="android_external_freetype" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="hardened_malloc" />
+	<project path="external/hardened_malloc" name="hardened_malloc" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="platform/external/libcups" />
+	<project path="external/libcups" name="platform_external_libcups" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="platform/external/libvpx" />
+	<project path="external/libvpx" name="platform_external_libvpx" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="platform/external/libxml2" />
+	<project path="external/libxml2" name="platform_external_libxml2" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="platform/external/pdfium" />
+	<project path="external/pdfium" name="platform_external_pdfium" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_external_sonivox" />
+	<project path="external/sonivox" name="android_external_sonivox" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="platform/external/svox" />
+	<project path="external/svox" name="platform_external_svox" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="platform/external/zlib" />
+	<project path="external/zlib" name="platform_external_zlib" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_frameworks_av" />
+	<project path="frameworks/av" name="android_frameworks_av" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_frameworks_base" />
+	<project path="frameworks/base" name="android_frameworks_base" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_frameworks_native" />
+	<project path="frameworks/native" name="android_frameworks_native" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_frameworks_opt_net_wifi" />
+	<project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_hardware_qcom_display" />
+	<project path="hardware/qcom-caf/apq8084/display" name="android_hardware_qcom_display" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_hardware_qcom_display" />
+	<project path="hardware/qcom-caf/msm8952/display" name="android_hardware_qcom_display" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_hardware_qcom_display" />
+	<project path="hardware/qcom-caf/msm8960/display" name="android_hardware_qcom_display" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_hardware_qcom_display" />
+	<project path="hardware/qcom-caf/msm8974/display" name="android_hardware_qcom_display" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_hardware_qcom_display" />
+	<project path="hardware/qcom-caf/msm8994/display" name="android_hardware_qcom_display" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_hardware_qcom_audio" />
+	<project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_hardware_qcom_audio" />
+	<project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_hardware_qcom_audio" />
+	<project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_hardware_qcom_display" />
+	<project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="android_kernel_samsung_exynos7870" />
+	<project path="kernel/samsung/exynos7870" name="android_kernel_samsung_exynos7870" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_libcore" />
+	<project path="libcore" name="android_libcore" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_Bluetooth" />
+	<project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_Camera2" />
+	<project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_Car_Settings" />
+	<project path="packages/apps/Car/Settings" name="android_packages_apps_Car_Settings" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_Contacts" />
+	<project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_Dialer" />
+	<project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_LineageParts" />
+	<project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_Messaging" />
+	<project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_Nfc" />
+	<project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
+	<project path="packages/apps/PermissionController" name="android_packages_apps_PackageInstaller" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_Settings" />
+	<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_SetupWizard" />
+	<project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_Traceur" />
+	<project path="packages/apps/Traceur" name="android_packages_apps_Traceur" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+	<project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_TvSettings" />
+	<project path="packages/apps/TvSettings" name="android_packages_apps_TvSettings" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_apps_Updater" />
+	<project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_inputmethods_LatinIME" />
+	<project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_providers_DownloadProvider" />
+	<project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_providers_MediaProvider" />
+	<project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_providers_TelephonyProvider" />
+	<project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_services_BuiltInPrintService" />
+	<project path="packages/services/BuiltInPrintService" name="android_packages_services_BuiltInPrintService" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_services_Telecomm" />
+	<project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_packages_services_Telephony" />
+	<project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="platform/prebuilts/abi-dumps/vndk" />
+	<project path="prebuilts/abi-dumps/vndk" name="platform_prebuilts_abi-dumps_vndk" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_system_bt" />
+	<project path="system/bt" name="android_system_bt" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_system_core" />
+	<project path="system/core" name="android_system_core" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_system_extras" />
+	<project path="system/extras" name="android_system_extras" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_system_netd" />
+	<project path="system/netd" name="android_system_netd" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_system_nfc" />
+	<project path="system/nfc" name="android_system_nfc" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_system_sepolicy" />
+	<project path="system/sepolicy" name="android_system_sepolicy" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_system_update_engine" />
+	<project path="system/update_engine" name="android_system_update_engine" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="platform/tools/apksig" />
+	<project path="tools/apksig" name="platform_tools_apksig" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_vendor_nxp_opensource_external_libnfc-nci" />
+	<project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_vendor_nxp_opensource_packages_apps_Nfc" />
+	<project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_vendor_nxp_opensource_halimpl" />
+	<project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_vendor_qcom_opensource_packages_apps_Bluetooth" />
+	<project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+	<remove-project name="LineageOS/android_vendor_qcom_opensource_system_bt" />
+	<project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="axp.os" revision="refs/tags/2024-06-19_j5y17lte_a10" />
+
+</manifest>
