@@ -82,6 +82,7 @@
         <!-- GrapheneOS -->
 	<project path="external/hardened_malloc" name="hardened_malloc" remote="gos" revision="749640c274d54e084505a24fa758bcb5f96a25ef" />
 	<project path="external/SecureCamera" name="platform_external_Camera" remote="gos" revision="6b16f075e691d064379fe9d855f4c5c5a44c7f55" />
+	<project path="packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" remote="gos" revision="e710a67ed64620fc11f62520cceef4bba64dc2a6" />
 <!-- END OF ADDITIONAL REPOS -->
 
 <!-- START OF AXP.OS REPOS -->
