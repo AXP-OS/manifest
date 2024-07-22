@@ -26,6 +26,10 @@
        <remote name="muppets" 
               fetch="https://github.com/TheMuppets" 
               revision="lineage-16.0" />
+
+	<remote name="gfour"
+           fetch="https://github.com/LGgFour/"
+           revision="axp-a9" />
   
         <!-- FIRMWARE related repo, not shared public and even not on github bc they want money for LFS  -->
         <remote name="axp.os-private" 
@@ -145,8 +149,13 @@
 	<project path="packages/apps/FlipFlap" name="android_packages_apps_FlipFlap" remote="los" />
 	<!--project path="hardware/samsung" name="android_hardware_samsung" remote="los" />-->
 
-        <!-- Common Proprietary Blobs -->
-        
+	<!-- LG G4 (h810, h811, h812, h815:int, h815_usu, vs986 -->
+	<remove-project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" />
+  	<remove-project path="hardware/broadcom/libbt" name="LineageOS/android_hardware_broadcom_libbt" groups="pdk" />
+        <project name="android_device_lge_g4-common" path="device/lge/g4-common" remote="gfour" />
+        <project name="android_device_lge_g4" path="device/lge/g4" remote="gfour" />
+        <project name="kernel_lge_msm8992" path="kernel/lge/msm8992" remote="gfour" revision="android-9.0" />
+        <project path="vendor/lge" name="proprietary_vendor_lge" remote="gfour" />
 
 <!-- END OF DEVICE REPOS -->
       
