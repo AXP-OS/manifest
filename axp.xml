@@ -154,7 +154,7 @@
         <project name="android_device_lge_g4-common" path="device/lge/g4-common" remote="gfour" />
         <project name="android_device_lge_g4" path="device/lge/g4" remote="gfour" />
         <project name="kernel_lge_msm8992" path="kernel/lge/msm8992" remote="gfour" revision="android-9.0" />
-        <project path="vendor/lge" name="proprietary_vendor_lge" remote="gfour" />
+        <project path="vendor/lge" name="proprietary_vendor_lge" remote="gfour" revision="android-9.0" />
 
 <!-- END OF DEVICE REPOS -->
       
