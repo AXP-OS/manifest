@@ -128,7 +128,7 @@
 	     the folders get created and filled on-the-fly during build by the divest scripts.
 	     in order to do reproducible builds they are created and tracked here
 	-->
-	<project path="vendor/divested" name="vendor_divested" remote="axp.os" revision="main" />
+	<project path="vendor/divested" name="vendor_divested" remote="axp.os-private" revision="main" />
 	<project path="vendor/divested-carriersettings" name="vendor_divested-carriersettings" remote="axp.os-private" revision="main" />
 	
 <!-- END OF AXP.OS REPOS -->
