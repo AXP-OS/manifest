@@ -132,6 +132,7 @@
         -->
 	
         <!-- Common -->
+	<project path="vendor/divested" name="vendor_divested" remote="axp.os" revision="main" />
 	<project path="system/qcom" name="android_system_qcom" remote="los" />
 	<project path="external/bson" name="android_external_bson" remote="los" />
 	<project path="external/sony/boringssl-compat" name="android_external_sony_boringssl-compat" remote="los" />
