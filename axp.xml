@@ -38,10 +38,6 @@
 <!-- END OF REMOTE DEFINITIONS -->
 
 <!-- START OF UNNECESSARY REPO REMOVAL -->
-	<!-- START: part of the LG g4 device tree -->
-        <remove-project path="hardware/broadcom/libbt" name="LineageOS/android_hardware_broadcom_libbt" />
-	<!-- END: part of the LG g4 device tree -->
-	
 	<remove-project name="device/generic/mini-emulator-arm64" />
 	<remove-project name="device/generic/mini-emulator-armv7-a-neon" />
 	<remove-project name="device/generic/mini-emulator-x86" />
@@ -107,7 +103,7 @@
   
 <!-- START OF ADDITIONAL REPOS -->
         <!-- GrapheneOS -->
-	<project path="external/hardened_malloc" name="GrapheneOS/hardened_malloc" remote="github" revision="749640c274d54e084505a24fa758bcb5f96a25ef" />
+	<project path="external/hardened_malloc" name="GrapheneOS/hardened_malloc" remote="github" revision="3f07acfab1cfff00baf33c477f96d3e3f874275a" />
 	<project path="packages/apps/CarrierConfig2" name="GrapheneOS/platform_packages_apps_CarrierConfig2" remote="github" revision="e710a67ed64620fc11f62520cceef4bba64dc2a6" />
 <!-- END OF ADDITIONAL REPOS -->
 
@@ -139,7 +135,7 @@
           https://github.com/Divested-Mobile/DivestOS-Build/blob/master/Manifests/Manifest_LAOS-18.1.xml 
         -->
         <!-- Common -->
-        <!--project path="system/qcom" name="LineageOS/android_system_qcom" remote="github" />-->
+        <project path="system/qcom" name="LineageOS/android_system_qcom" remote="github" />
 	<project path="external/bson" name="LineageOS/android_external_bson" remote="github" />
 	<project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" />
 	<project path="hardware/sony/thermanager" name="LineageOS/android_hardware_sony_thermanager" remote="github" />
@@ -148,14 +144,17 @@
 	<project path="hardware/sony/simdetect" name="LineageOS/android_hardware_sony_simdetect" remote="github" />
 	<project path="hardware/sony/SonyOpenTelephony" name="LineageOS/android_hardware_sony_SonyOpenTelephony" remote="github" />
 	<project path="packages/apps/ElmyraService" name="LineageOS/android_packages_apps_ElmyraService" remote="github" />
-        
-        <!-- LG G4 (h810, h811, h812, h815:int, h815_usu, vs986 -->
-        <project name="android_device_lge_g4-common" path="device/lge/g4-common" remote="gfour" />
-        <project name="android_device_lge_g4" path="device/lge/g4" remote="gfour" />
-        <project name="kernel_lge_msm8992" path="kernel/lge/msm8992" remote="gfour" revision="titan_wh" />
-        <project path="vendor/lge" name="proprietary_vendor_lge" remote="gfour" />
-	       
-        <!-- Common Proprietary Blobs -->
+
+	<!-- Samsung Common -->
+	<project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github" />
+	<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" />
+	<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="muppets" />
+	
+        <!-- Samsung Galaxy S5 (klte) -->
+	<project path="device/samsung/klte" name="LineageOS/android_device_samsung_klte" remote="github" />
+	<project path="device/samsung/klte-common" name="LineageOS/android_device_samsung_klte-common" remote="axp.os" />
+	<project path="device/samsung/msm8974-common" name="LineageOS/android_device_samsung_msm8974-common" remote="github" />
+	<project path="kernel/samsung/msm8974" name="LineageOS/android_kernel_samsung_msm8974" remote="github" />
 
         <!-- END OF DEVICE REPOS -->
       
