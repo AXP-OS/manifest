@@ -146,15 +146,15 @@
 	<project path="packages/apps/ElmyraService" name="LineageOS/android_packages_apps_ElmyraService" remote="github" />
 
 	<!-- Samsung Common -->
-	<project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github" />
-	<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" />
+	<project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="los" />
+	<project path="hardware/samsung" name="android_hardware_samsung" remote="los" />
 	<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="muppets" />
 	
         <!-- Samsung Galaxy S5 (klte) -->
-	<project path="device/samsung/klte" name="LineageOS/android_device_samsung_klte" remote="github" />
-	<project path="device/samsung/klte-common" name="LineageOS/android_device_samsung_klte-common" remote="axp.os" />
-	<project path="device/samsung/msm8974-common" name="LineageOS/android_device_samsung_msm8974-common" remote="github" />
-	<project path="kernel/samsung/msm8974" name="LineageOS/android_kernel_samsung_msm8974" remote="github" />
+	<project path="device/samsung/klte" name="android_device_samsung_klte" remote="los" />
+	<project path="device/samsung/klte-common" name="android_device_samsung_klte-common" remote="axp.os" />
+	<project path="device/samsung/msm8974-common" name="android_device_samsung_msm8974-common" remote="los" />
+	<project path="kernel/samsung/msm8974" name="android_kernel_samsung_msm8974" remote="los" />
 
         <!-- END OF DEVICE REPOS -->
       
