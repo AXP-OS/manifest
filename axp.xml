@@ -147,7 +147,7 @@
 
 	<!-- Samsung Common -->
 	<project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="los" />
-	<project path="hardware/samsung" name="android_hardware_samsung" remote="los" />
+	<project path="hardware/samsung" name="android_hardware_samsung" remote="axp.os" />
 	<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="muppets" />
 	
         <!-- Samsung Galaxy S5 (klte) -->
