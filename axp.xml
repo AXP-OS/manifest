@@ -109,7 +109,9 @@
 	<project path="external/svox" name="platform/external/svox" groups="pdk" remote="aosp" revision="master" />
         <!-- GrapheneOS -->
         <project path="external/hardened_malloc" name="hardened_malloc" remote="gos" revision="749640c274d54e084505a24fa758bcb5f96a25ef" />
-        <!--project path="external/SecureCamera" name="platform_external_Camera" remote="gos" />-->
+        
+	<!-- cherrypicker patch tool -->
+    	<project path="external/cherrypicker" name="aol-aosip/android_vendor_unconv" remote="github" revision="master" />
 <!-- END OF ADDITIONAL REPOS -->
 
 <!-- START OF AXP.OS REPOS -->
