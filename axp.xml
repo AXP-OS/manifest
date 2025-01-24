@@ -107,8 +107,8 @@
   
 <!-- START OF ADDITIONAL REPOS -->
         <!-- GrapheneOS -->
-	<project path="external/hardened_malloc" name="GrapheneOS/hardened_malloc" remote="github" revision="749640c274d54e084505a24fa758bcb5f96a25ef" />
-	<project path="packages/apps/CarrierConfig2" name="GrapheneOS/platform_packages_apps_CarrierConfig2" remote="github" revision="e710a67ed64620fc11f62520cceef4bba64dc2a6" />
+	<project path="external/hardened_malloc" name="hardened_malloc" remote="gos" revision="refs/tags/13" />
+	<project path="packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" remote="gos" revision="13" />
 
 	<!-- cherrypicker patch tool -->
     	<project path="external/cherrypicker" name="aol-aosip/android_vendor_unconv" remote="github" revision="master" />
