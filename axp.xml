@@ -29,7 +29,7 @@
   
         <!-- FIRMWARE related repo, not shared public and even not on github bc they want money for LFS  -->
         <remote name="axp.os-private" 
-              fetch="ssh://code.binbash.rocks:22443/AXP.OS"
+              fetch="ssh://git@code.binbash.rocks:22443/AXP.OS"
               revision="axp-a10" />
 
         <!-- Wireguard module -->
