@@ -6,19 +6,28 @@
         <remote name="sfX" 
               fetch="https://github.com/sfX-Android/" 
               revision="axp-a11" />  
-        <remote name="axp.os" 
+        
+	<remote name="axp.os" 
               fetch="https://github.com/AXP-OS/"
               revision="axp-a11" />
-       <remote name="los" 
+	
+	<remote name="aos-mirror" 
+              fetch="https://codeberg.org/AXP-OS"
+              revision="axp-a11" />
+	
+        <remote name="los" 
               fetch="https://github.com/LineageOS" 
               revision="lineage-18.1" />
-       <remote name="gos" 
+	
+	<remote name="gos" 
               fetch="https://github.com/GrapheneOS" 
               revision="11" />
-       <remote name="muppets" 
+       
+	<remote name="muppets" 
               fetch="https://github.com/TheMuppets" 
               revision="lineage-18.1" />
-       <remote name="gfour"
+       
+	<remote name="gfour"
            fetch="https://github.com/LGgFour/"
            revision="axp-a11" />
   
@@ -120,6 +129,8 @@
         <project path="external/buildtools" name="android_buildtools" remote="sfX" revision="main" />
         <!-- WireGuard VPN -->
         <project remote="zx2c4" name="wireguard-linux-compat" path="kernel/wireguard-linux-compat" sync-s="true" />
+	<!-- CVE Kernel patcher -->
+	<project path="external/cve_kernel_patches" name="kernel_patches" remote="aos-mirror" revision="main" />
 	
 	<!-- "non-existent" divestOS - only repos.
 	     the folders get created and filled on-the-fly during build by the divest scripts.
