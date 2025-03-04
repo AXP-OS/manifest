@@ -116,8 +116,6 @@
 	<project path="external/hardened_malloc" name="hardened_malloc" remote="gos" revision="refs/tags/13" />
 	<project path="packages/apps/CarrierConfig2" name="platform_packages_apps_CarrierConfig2" remote="gos" revision="13" />
 
-	<!-- cherrypicker patch tool -->
-    	<project path="external/cherrypicker" name="aol-aosip/android_vendor_unconv" remote="github" revision="master" />
 <!-- END OF ADDITIONAL REPOS -->
 
 <!-- START OF AXP.OS REPOS -->
