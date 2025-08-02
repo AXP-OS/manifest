@@ -178,6 +178,7 @@
 	<project path="kernel/google/msm-4.9" name="android_kernel_google_msm-4.9" remote="los" />
 	<project path="kernel/google/msm-4.14" name="android_kernel_google_msm-4.14" remote="axp.os_kernel" />
 	<project path="kernel/google/gs201/private/gs-google" name="android_kernel_google_gs201" remote="axp.os_kernel" />
+	<project path="device/google/pantah" name="android_device_google_pantah" remote="los" />
 
 	<!-- samsung - common -->
 	<project path="device/samsung/sm7125-common" name="android_device_samsung_sm7125-common" remote="axp.os" />
@@ -234,12 +235,16 @@
 	<project path="device/google/lynx" name="android_device_google_lynx" remote="los" />
 	<project path="vendor/google/lynx" name="proprietary_vendor_google_lynx" remote="gitlabmuppets" />
 	<!-- uses google gs201 commons + gs201 common kernel (see above) -->
+
+	<!-- Google Pixel 7 (panther) -->
+	<project path="device/google/panther" name="android_device_google_panther" remote="los" />
+	<project path="vendor/google/panther" name="proprietary_vendor_google_panther" remote="gitlabmuppets" />
+	<!-- uses google gs201 commons + pantah + gs201 common kernel (see above) -->
 	
 	<!-- Google Pixel 7 Pro (cheetah) -->
 	<project path="device/google/cheetah" name="android_device_google_cheetah" remote="los" />
-	<project path="device/google/pantah" name="android_device_google_pantah" remote="los" />
 	<project path="vendor/google/cheetah" name="proprietary_vendor_google_cheetah" remote="gitlabmuppets" />
-	<!-- uses google gs201 commons + gs201 common kernel (see above) -->
+	<!-- uses google gs201 commons + pantah + gs201 common kernel (see above) -->
 
 	<!-- OnePlus 5 (cheeseburger) -->
 	<project path="device/oneplus/cheeseburger" name="android_device_oneplus_cheeseburger" remote="los" />
