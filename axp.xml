@@ -108,6 +108,8 @@
         <project remote="zx2c4" name="wireguard-linux-compat" path="kernel/wireguard-linux-compat" sync-s="true" />
 	<!-- CVE Kernel patcher -->
 	<project path="external/cve_kernel_patches" name="kernel_patches" remote="aos-mirror" revision="main" />
+	<!-- AOS versioning -->
+	<project path="external/axp-versioning" name="axp_versioning" remote="axp.os-private" revision="main" />
 	
 	<!-- temp until hopefully accepted upstream -->
 	<remove-project path="packages/apps/Seedvault" name="LineageOS/android_packages_apps_Seedvault" />
