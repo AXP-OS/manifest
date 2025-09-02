@@ -181,7 +181,7 @@
 	<!-- project path="device/google/gs101" name="android_device_google_gs101" remote="axp.os" /> -->
 	<!--project path="kernel/google/msm-4.9" name="android_kernel_google_msm-4.9" remote="los" />-->
 	<project path="device/google/gs201" name="android_device_google_gs201" remote="axp.os" />
-	<project path="kernel/google/gs201/private/gs-google" name="android_kernel_google_common" remote="axp.os" revision="axp-a15_pantah" />
+	<!--project path="kernel/google/gs201/private/gs-google" name="android_kernel_google_common" remote="axp.os" revision="axp-a15_pantah" />-->
 	<project path="kernel/google/msm-4.14" name="android_kernel_google_msm-4.14" remote="axp.os" />
 	
 	<!-- samsung - common -->
