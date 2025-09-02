@@ -258,10 +258,12 @@
 	<!-- uses google gs201 commons + gs201 common kernel (see above) -->
 	
 	<!-- Google Pixel 7 Pro (cheetah) -->
+	<project path="kernel/google/gs201/private/gs-google" name="android_kernel_google_gs201_private_gs-google" remote="axp.os" />
+	<!-- uses device_google_gs201 / kernel_google_gs201_private_gs-google -->
 	<!--
-	<project path="device/google/cheetah" name="android_device_google_cheetah" remote="los" />
-	<project path="device/google/pantah" name="android_device_google_pantah" remote="los" />
-	<project path="vendor/google/cheetah" name="proprietary_vendor_google_cheetah" remote="gitlabmuppets" />
+	<project path="device/google/cheetah" name="android_device_google_cheetah" remote="axp.os" />
+	<project path="device/google/pantah" name="android_device_google_pantah" remote="axp.os" />
+	<project path="vendor/google/cheetah" name="proprietary_vendor_google_cheetah" remote="axp.os-private" />
 	-->
 	<!-- uses google gs201 commons + gs201 common kernel (see above) -->
 
